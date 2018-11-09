@@ -160,7 +160,7 @@ i headeren så siden skal se bra ut ved forskjellige skjermstørrelser*/
     display: none;
   }
 }
-@media only screen and (max-width:521px){
+@media only screen and (max-width:533px){
   #logo{
     width: auto;
     height: 90px;
