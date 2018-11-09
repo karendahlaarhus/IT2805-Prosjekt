@@ -1,0 +1,412 @@
+html {
+  background-color: #C7C7C7;
+  padding: 50px;
+}
+
+body{
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px;
+  background-color: #F6F6F6;
+  font-family: Georgia, sans-serif;
+}
+
+/*HEADER*/
+/*En div som skal erstatte plassen som header egentlig tar opp*/
+.placeholder {
+    height:168px;
+    width:100%;
+    display:none;
+}
+
+/*Streken på venstre side av logo*/
+#line1{
+  width: 34%;
+  margin-left: 30px;
+  position: absolute;
+  margin-top: 57px;
+}
+
+/*streken på høyre side av logo*/
+#line2{
+  width: 34%;
+  position: absolute;
+  margin: 4.5% 0 0 54.3%;
+  margin-top: 57px;
+}
+
+/*Hentet inspirasjon fra denne siden: https://www.w3schools.com/howto/howto_js_sticky_header.asp
+for å lage en sticky header*/
+#headeren {
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Sticky class tilføres header med JS når den når den scrolla posisjon */
+.sticky {
+  position: fixed;
+  top: 0px;
+}
+
+.centerlogo{
+  margin-top: 0px;
+}
+
+ul {
+    background-color: #464646;
+    padding: 0px;
+    display: inline-block;
+    width: 100%;
+}
+
+li {
+    font-size: 25px;
+    width: auto;
+    display: inline-block;
+    padding: 10px;
+    padding-right: 80px;
+}
+
+/* Gjør 'meny', 'om oss' og 'bordbestilling' delvis gjennomsiktig*/
+header li .meny{
+  opacity: 0.8;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Fjerner gjennomsiktighet på 'meny', 'om oss' og 'bordbestilling' når pilpekeren holdes over elementene.*/
+li a:hover {
+  opacity: 1;
+}
+
+#logo{
+  width: auto;
+  height: 100px;
+  padding-right: 35px;
+}
+
+/* Bruker media queries for å gjøre siden responsive, tilpasser padding og størrelse på listeelementene
+i headeren så siden skal se bra ut ved forskjellige skjermstørrelser*/
+@media only screen and (max-width:1210px) {
+  #line1, #line2{
+    display: none;
+  }
+  #headeren li{
+    padding-right: 30px;
+    padding-left: 10px;
+  }
+  sup a{
+    margin: 30px;
+  }
+}
+@media only screen and (max-width:1008px){
+  #headeren li{
+    padding: 0px;
+  }
+  sup a{
+    margin: 10px;
+  }
+  #logo{
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width:820px){
+  #logo{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width:802px){
+  #logo{
+    width: auto;
+    height: 80px;
+  }
+  li{
+    font-size: 20px;
+  }
+  #forsideBoks{
+    display: none;
+  }
+}
+@media only screen and (max-width:700px){
+  #logo{
+    width: auto;
+    height: 80px;
+  }
+  li{
+    font-size: 20px;
+    margin-left: -20px;
+  }
+}
+@media only screen and (max-width:616px){
+  #logo{
+    width: auto;
+    height: 70px;
+  }
+  li{
+    font-size: 17px;
+    margin-left: -20px;
+    margin-right: -10px;
+  }
+  .mapouter{
+    display: none;
+  }
+  #duFinnerOssHer{
+    display: none;
+  }
+}
+@media only screen and (max-width:521px){
+  #logo{
+    width: auto;
+    height: 90px;
+  }
+  li{
+    font-size: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+
+/*MAIN*/
+/*Index html*/
+
+#forside_bilde{
+  width: 100%;
+  height: auto;
+}
+
+#forsideBoks{
+  padding: 10px;
+  background-color: #d5d5d5;
+  opacity: 0.7;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-family: Georgia, sans-serif;
+  text-align: center;
+
+}
+
+/*Her behandler vi hovedinnholdet på "om oss" siden, alts de elementene som er spesielle for denne html-filen*/
+#omoss{
+  margin-top: 30px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+#text {
+  position: relative;
+  width: 60%;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 60px;
+  margin: auto;
+  line-height: 150%;
+}
+
+#quotes{
+  text-align: justify;
+  font-family: Georgia, sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+}
+h2 h3{
+  font-family: Georgia, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+#duFinnerOssHer{
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+
+  font-family: Georgia;
+}
+
+
+/* Styler kartet, mye av koden er hentet fra style-koden vi fikk fra denne nettsiden: https://www.embedgooglemap.net/ */
+.mapouter{
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: 100px;
+  height:300px;
+  width:400px;
+}
+.gmap_canvas{
+  overflow:hidden;
+  background:none!important;
+  height:300px;
+  width:400px;
+}
+
+/*Bilder til slideshowet*/
+.slide {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+ height: 100%;
+}
+
+/*Legger til border på slideshow-bildene*/
+.mySlides img {
+  border: 1px solid
+}
+
+/*Meny-html*/
+#pizza_overskrift, #pasta_overskrift, #dessert_overskrift, #barnemeny_overskrift{
+  padding-top: 240px;
+  margin-top: -240px;
+}
+#menyhtml{
+  text-align: center;
+}
+
+#menyBilde{
+  width: 100%;
+  padding: 5px 0px 50px 0px;
+}
+
+.mainDiv{
+  text-align: center;
+  width: 100%;
+}
+.allergi{
+  font-style: italic;
+}
+sup a{
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+  font-family: palatino, sans-serif;
+  font-size: 35px;
+  margin: 45px;
+}
+
+sup a:hover{
+  opacity: 1;
+}
+
+.placeholder1{
+  height:51px;
+  width:100%;
+  display:none;
+}
+
+/*Button*/
+#allergi_button{
+  float: right;
+  text-align: center;
+  background-color: #464646;
+  border-radius: 12px;
+  font-size: 18px;
+  font-family: palatino sans-serif;
+  color: white;
+  padding: 6px 20px;
+  transition-duration: 0.6s;
+  outline: none;
+}
+#allergi_button:hover{
+  background-color: #F6F6F6;
+  border: 2px solid #464646;
+  color: black;
+}
+
+/* Sticky1 class tilføres menyheader med JS når den når den scrolla posisjon */
+.sticky1{
+  position: fixed;
+  background-color: #F6F6F6;
+  top: 155px;
+  width: 89.1%;
+  padding-top: 10px;
+}
+
+/*BORDBESTILLING CSS BEGYNNER HER:*/
+#bordbestilling{
+  text-align: center;
+  padding-top: 30px;
+}
+
+#btnSubmit{
+  text-align: center;
+  background-color: #464646;
+  border-radius: 12px;
+  font-size: 18px;
+  font-family: palatino sans-serif;
+  color: white;
+  padding: 6px 20px;
+  transition-duration: 0.6s;
+  outline: none;
+  margin-top: 30px;
+}
+#btnSubmit:hover{
+  background-color: #F6F6F6;
+  border: 2px solid #464646;
+  color: black;
+}
+
+#inpFornavn{
+  margin-left: 0px;
+  margin-right: 21px;
+}
+
+#inpEtternavn{
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[name=navn]{  /*Egen regel for fornavn og etternavn feltet som skal være mindre enn de andre feltene og på samme linje*/
+  width: 48%;
+  margin: auto;
+  margin: 10px;
+}
+
+select{
+  padding: 12px 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label{
+  font-size: 16px;
+  color: rgb(112, 112, 112);
+}
+
+.group{
+display: inline-block;
+width: 30%;
+}
+
+output{
+  color: rgb(112, 112, 112);
+  font-size: 20px;
+  font-family: palatino;
+}
+
+/*FOOTER*/
+#footeren li{
+  margin: 14px 60px 0px 100px;
+  color: white;
+  height: 50px;
+  padding: 2px;
+  font-size: 18px;
+}
