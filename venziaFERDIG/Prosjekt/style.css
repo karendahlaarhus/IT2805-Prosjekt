@@ -423,7 +423,7 @@ output{
   font-family: Georgia, sans-serif;
 }
 
-p{
+.bestillingP{ /* avsnitt på bestillingssiden. Bruker class for å skille mellom denne og et element på index siden som også bruker p, men har annen stil*/
   margin: auto;
   width: 60%;
   font-size: 18px;
@@ -446,7 +446,7 @@ width: 30%;
 output{
   color: rgb(112, 112, 112);
   font-size: 20px;
-  font-family: palatino;
+  font-family: Georgia, sans-serif;
 }
 
 /*FOOTER*/
@@ -461,4 +461,3 @@ output{
   padding: 2px;
   font-size: 18px;
 }
-
