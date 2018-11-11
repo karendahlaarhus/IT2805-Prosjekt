@@ -417,6 +417,26 @@ label{
   font-size: 16px;
   color: rgb(112, 112, 112);
 }
+output{
+  color: rgb(112, 112, 112);
+  font-size: 20px;
+  font-family: Georgia, sans-serif;
+}
+
+p{
+  margin: auto;
+  width: 60%;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgb(112, 112, 112);
+}
+
+h2{
+  font-family: Georgia, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
 
 .group{
 display: inline-block;
@@ -441,3 +461,4 @@ output{
   padding: 2px;
   font-size: 18px;
 }
+
