@@ -430,8 +430,12 @@ output{
 }
 
 /*FOOTER*/
+#footeren ul{
+  text-align: center;
+}
+
 #footeren li{
-  margin: 14px 60px 0px 100px;
+  margin: 14px 60px 0px 60px;
   color: white;
   height: 50px;
   padding: 2px;
