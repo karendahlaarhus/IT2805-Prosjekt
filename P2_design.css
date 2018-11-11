@@ -1,0 +1,54 @@
+html {
+  background-color: #999a9e;
+  padding: 50px;
+}
+
+body{
+  max-width: 880px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ededed;
+}
+
+
+h1{
+  font-family: Zapfino, sans-serif;
+}
+
+h3, h4{
+  font-family: Calibri, sans-serif;
+  margin: auto;
+}
+
+section{
+  text-align: justify;
+  line-height: 1.5;
+  font-family: Calibri, sans-serif;
+}
+
+img{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+table, th, td {
+      border: 0.1px solid black;
+      padding: 10px;
+      }
+
+.footer{
+  height: 70px;
+  margin-bottom: -100px;
+  clear: both;
+  position: relative;
+  left: auto;
+  background-color: gray;
+
+
+      }
+
+.fotter li{
+  display: block;
+  width: 100%;
+      }

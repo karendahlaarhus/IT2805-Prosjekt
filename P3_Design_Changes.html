@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="P2_design.css">
+    <meta charset="utf-8">
+    <title>P3 Design Changes - Group 37</title>
+  </head>
+  <body>
+    <header>
+      <h1>P3 - Design Changes</h1>
+      <h3> Siw, Ragnhild, Julie, Karen & Johanna Sofie</h3>
+      <h4> 07. November 2018</h4>
+    </header>
+    <section>
+      <div id="admin">
+        <h2>Administrative detaljer</h2>
+        <p> Vår fiktive klient har fått navnet Anna Rossi </p>
+        <p> Restaurant heter Venzia </p>
+        <p> Link til vår hjemmeside: <a href="http://folk.ntnu.no/juliehm/venzia-master/venzia/Prosjekt/html/index.html" target="_blank"> Venzia </a> </p>
+      </div>
+    </section>
+    <section>
+      <div class="changes">
+       <h2>Endringer</h2>
+       <p> Vår side ble ganske lik som vi hadde planlagt, men det ble noen endringer som vi skal diskutere næremere under. </p>
+         <p>
+         <b>index.html</b> Vi bestemte oss for å ha en enkel forside som skulle være innbydende. Den ble ganske lik som vi hadde tenkt med tanke på logo, footer og bildet. I footern var planen å ha en link i adressen til restauranten.  Vi fant ut at det ble mer oversiktlig å legge linken i siden about.html da vi kunne forklare mer rundt området og lokalet samt legge til ett kart som kundene kunne klikke seg inn på. Bildet som ble brukt i P2 ble for dårlig kvalitet når vi skulle bruke det på siden, så vi måtte erstatte det med et bilde med bedre kvalitet.
+         </p>
+         <p>
+         <b>meny.html</b> Menyen ble ganske lik som vi hadde planlagt med tanke på allergiknappen og menyen. Planen var at det skulle komme opp et nytt bilde for hver kategori på menyen, eksempelvis pasta viser et bilde av pasta. Vi gikk heller for å ha hele menyen på siden og når man trykker på en kategori kommer man på den gjellende kategorien. Headeren er synelig uansett hvor du er på siden, sånn at kundene til en hver til kan komme seg til en annen side. Hovedbildet ble også endret da vi synes at det bildet vi hadde valgt ikke speilet vår restaurant. Vi fjernet også «meny» boksen som var midt i bildet.
+        </p>
+         <p>
+         <b>bordbestilling.html</b> Bordbestilling, her skulle det være mulig å bestille bord på en enkel måte. Alt er på en side og bekreftelsen med all informasjon kommer nederst på siden. Det ble en endring på hvor boksene står. Vi valgte og ha antall voskne og barn først, så navn, epost, telefonnummer og til slutt dato og klokkeslett. Dato og klokkeslett ble delt i to for en mer ryddig bestilling, da man først velger dato også klokkeslett. På de feltene kundene selv må skrive inn har vi valgt å ha teksten inni boksene og ikke utenfor. Mens på datovalg og antall personer der kunden får valgmuligheter er det beskrevet utenfor boksen.
+         </p>
+          <p>
+         <b>about.html</b> Denne siden skulle gi et innblikk av resturanten med slideshow, og informasjon. Slideshowet ble litt mindre en planlagt da vi ville at teksten skulle komme mer frem. Vi la også til mer informasjon om restauranten, og blant annet lagt til et kart av området som er hentet fra googel maps. Her kan kundene ser hvor restauranten ligger i forhold til området og hvordan man skal komme seg dit.
+         </p>
+        <p>
+         <b>logo.png</b> Når det gjelder logoen ble det en skrivefeil helt i starten når vi tegnet den, det ble Venzia og ikke Venezia. Vi ønsket ikke å endre dette da vi synes at Venzia ble en egen vri men inspirasjon av Italia. Logoen er lik på alle sidene og den er linket sånn at om du klikker på den kommer du tilbake til hovedsiden.
+        </p>
+        <p>
+          <b>sildeshow.js</b> Det skulle være på about.html siden med bilder som automatisk gikk til side når man åpnet siden. Den ble litt minde enn vi hadde tenkt, for at teksten skulle vise. Skildeshowt er tilpasset sånn at det blir mindre når siden blir mindre.
+        <p>
+         <b>buttons.js</b> Vi hadde et ønske om å få til en hamburgermeny når man åpner siden på liten skjerm. Men siden dette ikke var i tankene når vi laget hederen ble det en oppgave vi ikke fikk til.  Vi erstattet da hamburgermenyen med å gjøre headeren tilpasset frem til 801 px.  På mobil funker alle funksjonene på siden men den er ikke tilpasset for mobil.
+         </p>
+         <p>
+          <b>footer.js</b> Denne siden var ikke planlagt da vi hadde lagt den samme footerkoden i hver html siden. Så vi lagde en footer med en id for så og å koble til et script(footer.js). I js filen la vi inn teksten som skulle inn i footeren og lagde en funskjon (addfoooter) som skrev footerteksten i footeren ved hjelp av .innerhtml.
+          </p>
+          <p>
+           <b>header.js</b> Denne siden var heller ikke planlagt på samme grunnlag som footeren. Js-filen for headeren ble laget på samme måte som footeren.
+           </p>
+           <p>
+            <b>meny.js</b> Endringen på navnet fra allergi.js til meny.js. Og det ble en endring i "hoppingen" mellom kategoirene jf endringene i meny.html.
+            </p>
+          <p>
+         <b>bordbestilling.js</b> Vi fikk laget et bestillingskjema med navn, telefonnummer,epost-adresse og dato/klokkeslett valg. Vi la til antall voksne og barn som det skal bestilles bord til. Aldersgrensen for når man er barn er satt til 12 år. Vi fant ut at dette var info som er viktig å vite for hvor mye mat resturaneten skal beregne å lage. Alle knappene er validerte som vil si at alt må bli fylt ut for å sende inn skjemaet, dette får kunden beskjed om. Det er også lagt inn begrensninger på telefon, mail og epost. På antall voksne har vi laget en roll ned meny som gjør til at kundene har valget mellom 1-11 personer, mens på barn er det satt til 0-11. Vi la inn en ekstra javascript kode på bestillingen når det gjelder valg av dato. Som gjør at det ikke er mulig å velge en dato som har vært, om kunden gjør dette får den beskjed om at den må velge en senere dato. Vi lagde ikke en checkbox for om kunden ønsket bestillingen sendt på mail, det vil skje automatisk og kunden vil få beskjed om dette på bekreftelsesmeldingen nederst på siden.
+         </p>
+
+         <p><b>Endringer i CSS</b></p>
+           <ul>
+             <li> Fargen på hovedsiden(wrap fargen) og bakgrunnsfagren ble som planlagt #C7C7C7 og #F6F6F6. </li>
+             <li> Det skulle være en border som rammer inn selve nettsiden, denne valgte vi å droppe da det ble finere uten.</li>
+             <li> Som planlagt ble teksten hvit over mørk bakgrunn (#464646) på navigasjonsbaren og footer’en. Denne stylen la vi også på knappene vi har på meny.js og bestilling.js  </li>
+             <li> Skriftstype "fjord" fant vi ikke i CSS så da valgte vi heller en som var lik, "Georgia". Georgia blir brukt på headeren, i teksten på menyen.html og i teksen about.html.  </li>
+             <li> På overskriftene hadde vi ikke spesifisert hvilken font vi ville bruke på forholden. Men vi valgte "Book Antiqua" med standard størrelse h2/h3 .</li>
+             <li> Logoen ble tegnet i photoshop med skriften "Italianno" med størelse 150px på Venzia mens restaurant har font "Sukhumvit Set" og størrelse 30px</li>
+             <li> Adressen vil være en link som brukeren kan trykke på for å så deretter bli tatt med videre til Google Maps, som nevnt tiligere ble denne fjernet fra footeren og heller lagt inn på siden om oss.</li>
+          </ul>
+
+
+      </div>
+    </section>
+
+    <div class="plan">
+      <h2>Oversikt </h2>
+      <p>Her er vår utførelse av nettsiden: </p>
+      <table style="width:100%">
+        <tr>
+          <th>Filnavn</th>
+          <th>Beskrivelse av filen</th>
+          <th>Ansvarlig</th>
+        </tr>
+        <tr>
+          <td>mal.html</td>
+          <td> Hovedmalen for alle sidene, sånn at siden får et sammensatt inntrykk </td>
+          <td>Alle</td>
+        </tr>
+        <tr>
+          <td>index.html</td>
+          <td>Forsiden av nettsiden. Skal presentere restauranten. </td>
+          <td>Alle</td>
+        </tr>
+        <tr>
+          <td>about.html</td>
+          <td>Om restauranten, "hvem er vi?"</td>
+          <td>Siw og Ragnhild</td>
+        </tr>
+        <tr>
+          <td>meny.html</td>
+          <td>Menyen til restauranten</td>
+          <td> Johanna </td>
+        </tr>
+        <tr>
+          <td>bestilling.html</td>
+          <td>Mulighet for bordbestilling</td>
+          <td>Julie</td>
+        </tr>
+        <tr>
+          <td>style.css</td>
+          <td>Stilark for hele nettsiden</td>
+          <td> Alle </td>
+        </tr>
+        <tr>
+          <td>logo.png</td>
+          <td>Logo</td>
+          <td>Karen</td>
+        </tr>
+        <tr>
+          <td>mal.js</td>
+          <td> Holder headeren på plass når man scroller ned på siden </td>
+          <td>Siw</td>
+        </tr>
+        <tr>
+          <td>slideshow.js</td>
+          <td>Bildefremvisning med 3 bilder av restauranten</td>
+          <td> Siw </td>
+        </tr>
+        <tr>
+          <td>bordbestilling.js</td>
+          <td>Bordbestilling</td>
+          <td>Julie og Ragnhild</td>
+        </tr>
+        <tr>
+          <td>footer.js</td>
+          <td>Footer, lik på alle sider</td>
+          <td>Julie</td>
+        </tr>
+        <tr>
+          <td>slideshow.js</td>
+          <td> Slideshow, med 3 bilder</td>
+          <td>Siw</td>
+        </tr>
+        <tr>
+          <td>header.js</td>
+          <td>Header lik på alle sidene </td>
+          <td>Julie og Siw</td>
+        </tr>
+        <tr>
+          <td>meny.js</td>
+          <td>Knapp for å få mere informasjon om matrettene</td>
+          <td>Johanna</td>
+        </tr>
+        <tr>
+          <td>Total oversikt</td>
+          <td>Dobbelsjekke at alt er i orden, og om siden virker som vi ønsker</td>
+          <td>Alle</td>
+        </tr>
+      </table>
+    </div>
+    <div class="oversikt">
+      <h2>Oversikt over organisering av filene: </h2>
+        <ul>
+          <li>mal
+           <ul>
+             <li>mal.html</li>
+             <li>mal.js</li>
+          </ul>
+          </li>
+          <li>bilder/
+            <ul>
+              <li>forside.jpeg</li>
+              <li>meny1.jpeg</li>
+              <li>logo.png</li>
+              <li> ute3.jpg</li>
+              <li> tapas2.jpg</li>
+              <li> open-kitchen1.jpg</li>
+            </ul>
+          </li>
+          <li>html/
+            <ul>
+              <li>index.html</li>
+              <li>about.html</li>
+              <li>meny.html</li>
+              <li>bordbestilling.html</li>
+            </ul>
+            </li>
+            <li>bordbestilling.js</li>
+            <li>meny.js</li>
+            <li>footer.js</li>
+            <li>header.js</li>
+            <li> slideshow.js</li>
+            <li>style.css</li>
+        </ul>
+      </div>
+
+
+
+  </body>
+</html>
