@@ -423,7 +423,7 @@ output{
   font-family: Georgia, sans-serif;
 }
 
-.bestillingP{ /* avsnitt på bestillingssiden. Bruker class for å skille mellom denne og et element på index siden som også bruker p, men har annen stil*/
+#bestillingP{ /* avsnitt på bestillingssiden. Bruker id for å skille mellom denne og et element på index siden som også bruker p, men har annen stil*/
   margin: auto;
   width: 60%;
   font-size: 18px;
